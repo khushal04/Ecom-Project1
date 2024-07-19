@@ -21,9 +21,9 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name, desc, brand,category;
+    private String name, description, brand,category;
     private BigInteger price;
     private Date releaseDate;
-    private boolean available;
+    private boolean productAvailable;
     private int stock;
 }
