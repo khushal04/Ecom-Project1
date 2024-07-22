@@ -1,15 +1,10 @@
 package com.example.Ecom_project.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 
@@ -26,4 +21,10 @@ public class Product {
     private Date releaseDate;
     private boolean productAvailable;
     private int stock;
+
+    private String imageName;
+    private String imageType;
+    @Lob
+    private byte[] imageData;
+
 }
